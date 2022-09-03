@@ -1,0 +1,131 @@
+.top-food {
+    margin-top: 50px;
+    /*border: 1px rgb(8, 8, 8) solid;*/
+    background-color:white;
+}
+.top-food-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.top-food-box {
+    padding: 15px 0px;
+    /*border: 1px black solid;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 140px;
+    gap:20px;
+}
+.top-food-contant {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 140px;
+    box-shadow: -1px 2px 9px 2px rgba(0,0,0,0.25);
+    -webkit-box-shadow: -1px 2px 9px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: -1px 2px 9px 2px rgba(0,0,0,0.25);
+    /* border: 1px black solid; */
+    border-radius: 10px;
+}
+.top-food-image  {
+    border-radius:10px;
+}
+.top-food-image img {
+    width:100%;
+    height:100%;
+    border-radius:10px;
+}
+.top-food-dis {
+    display: flex;
+    font-size: 12px;
+    padding-top:5px;
+   /* border: 1px red solid;*/
+}
+.top-food-country h3 {
+    font-size: 15px;
+    color: gray;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top-food-text {
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color:white;
+    border-radius:10px;
+    
+}
+.top-food-title {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    padding: 10px 0;
+
+}
+.top-food-dis-box {
+    border: 1px rgb(247, 247, 247) solid;
+    background-color:orangered;
+    padding: 5px 10px;
+    border-radius: 7px;
+    color: white;
+}
+.top-food-real-price {
+    color: rgb(17, 17, 17);
+    padding-top: 7px;
+    padding-left: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+@media(max-width:1200px){
+    .top-food-container {
+        width: 90%;
+    }
+    .top-food-box {
+        grid-template-columns: 1fr;
+        grid-template-rows:140px;
+    }
+    .top-food-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+@media(max-width:900px){
+    .top-food-container {
+        width: 90%;
+    }
+    .top-food-box {
+        grid-template-columns: 1fr;
+        grid-template-rows:140px;
+    }
+    .top-food-image img {
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+@media(max-width:400px) {
+    .top-food-box {
+        grid-template-columns: 1fr;
+        grid-template-rows:350px;
+    }
+    .top-food-contant {
+        grid-template-columns :1fr;
+        grid-template-rows:250px;
+    }
+    .top-food-image img {
+        width:100%;
+        height:100%;
+    }
+    .top-food {
+        margin-top: 10px;
+    }
+    .top-food-title {
+        font-size:10px;
+    }
+    .top-food-text {
+        text-align:center;
+    }
+    .top-food-dis {
+        padding-left:100px;
+    }
+}
